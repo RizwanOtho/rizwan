@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body{
+    border: 2px solid black;
+  margin: 5px 400px 0px 400px;
+    
+ 
+    
+  }
+h2{
+  background-color: blueviolet;
+  color: red;
+  margin: 5px 100px 0px 100px;
+  border-radius: 50px;
+  padding: 10px;
+  text-align: center;
+}
+input{
+  color: black;
+  background-color: aqua;
+  border-radius: 50px;
+  padding: 10px;
+  text-align: center;
+
+
+}
+button{
+  color: yellow;
+  background-color:green;
+  border-radius: 50px;
+  padding: 10px;
+  text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+</head>
+<body>
+
+<center><div id="myDIV">
+  <h2> RIZWAN MAKE TODO APP </h2><br>
+ <input type="text" id="input" placeholder="Enter your work">
+ <button onclick="newElement()">RIZWAN</button>
+</div></center>
+
+ <ul id="l">
+  
+</ul> 
+
+<script>
+
+
+
+
+function newElement() {
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("input").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("please Enter something");
+  }else {
+    document.getElementById("l").appendChild(li);
+  }
+  document.getElementById("input").value = "";
+
+
+  }
+
+</script>
+
+</body>
+</html>
